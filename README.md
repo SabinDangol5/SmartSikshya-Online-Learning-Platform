@@ -12,10 +12,10 @@ index.html
 contact.html
 courses.html
 
-Admin/Student controls : 
+Admin/Student controls (Kamal Singh Dhami): 
 dashboard.html
 
-Auth pages :
+Auth pages (Sabin Dangol) :
 login.html
 forgot-password.html
 register.html
