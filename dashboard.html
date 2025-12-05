@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">📘 SmartShikshya</div>
+
+    <ul class="menu">
+      <li class="menu-item active">Dashboard</li>
+      <li class="menu-item">My Courses</li>
+      <li class="menu-item">Certificates</li>
+      <li class="menu-item">Performance Charts</li>
+      <li class="menu-item">Help & FAQ</li>
+      <li class="menu-item">Contact Us</li>
+      <li class="menu-item">LogOut</li>
+    </ul>
+  </div>
+
+  <div style="display:flex; width:100%;">
+
+    <div class="main">
+
+      <div class="topbar">
+        <div><b>Welcome back, username !</b></div>
+        <input class="search-input" placeholder="Search courses, files...">
+        <div class="icons">
+          <span><i class="fa-regular fa-bell"></i></span>
+          <span><i class="fa-regular fa-moon"></i></span>
+          <span><i class="fa-regular fa-user"></i></span>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="boxes">
+          <div class="title">Total Courses</div>
+          <div class="value">5</div>
+        </div>
+        <div class="boxes">
+          <div class="title">Completed</div>
+          <div class="value">4</div>
+        </div>
+        <div class="boxes">
+          <div class="title">Hours Spent</div>
+          <div class="value">85h 32m</div>
+        </div>
+        <div class="boxes">
+          <div class="title">Active Courses</div>
+          <div class="value">2</div>
+        </div>
+      </div>
+
+
+      <div class="section-title">Your Active Courses</div>
+
+      <div class="courses">
+        <div class="course-card">
+          <div class="tag">PROGRAMMING</div>
+          <h3>Modern JavaScript</h3>
+          <p>Progress: 65%</p>
+          <div class="progress"><div class="progress-fill" style="width:65%"></div></div>
+          <div class="btn">Continue Learning</div>
+        </div>
+
+        <div class="course-card">
+          <div class="tag">FRONTEND DESIGN</div>
+          <h3>Advanced Tailwind Components</h3>
+          <p>Progress: 28%</p>
+          <div class="progress"><div class="progress-fill" style="width:28%"></div></div>
+          <div class="btn">Continue Learning</div>
+        </div>
+      </div>
+
+      <div class="section-title">Browse All Courses</div>
+
+      <div class="courses">
+        <div class="course-card">
+          <h3>Introduction to Nepal's Economy</h3>
+          <p>Total Duration: 6h 00m</p>
+          <div class="btn">Enroll Now</div>
+        </div>
+
+        <div class="course-card">
+          <h3>Python for Data Science </h3>
+          <p>Total Duration: 25h 30m</p>
+          <div class="btn">Enroll Now</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
