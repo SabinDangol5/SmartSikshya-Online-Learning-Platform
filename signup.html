@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,134 +6,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-100 min-h-screen flex items-center justify-center px-4">
-    <div
-      class="w-full max-w-6xl bg-white shadow-lg rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2"
-    >
+  <body class="bg-gray-100 min-h-screen">
+    <!-- NAVBAR -->
+    <nav class="bg-blue-600 text-white sticky top-0 z-50">
       <div
-        class="relative bg-gradient-to-br from-purple-700 to-blue-600 p-10 md:p-12 text-white flex flex-col justify-center"
+        class="container mx-auto flex justify-between items-center py-4 px-4"
       >
-        <div
-          class="absolute inset-0 bg-cover bg-center opacity-25"
-          style="background-image: url('bg-image.jpg')"
-        ></div>
-
-        <div class="relative z-10 space-y-6">
-          <div class="flex items-center gap-3">
-            <img
-              src="logo.png"
-              alt="SmartSikshya"
-              class="w-10 h-10 md:w-12 md:h-12"
-            />
-            <h1 class="text-2xl md:text-3xl font-bold tracking-wide">
-              SmartSikshya
-            </h1>
-          </div>
-
-          <h2 class="text-xl md:text-2xl font-semibold mb-2">
-            Start Your Learning Journey Today
-          </h2>
-
-          <p class="text-gray-200 text-sm md:text-base leading-relaxed">
-            Join thousands of learners mastering new skills and advancing their
-            careers with expert-led courses.
-          </p>
-
-          <ul class="space-y-4 text-sm md:text-base">
-            <li class="flex items-start gap-3">
-              <span class="text-white text-xl">✔</span>
-              <span>Access to 1000+ courses across multiple domains</span>
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-white text-xl">✔</span>
-              <span>Learn at your own pace with lifetime access</span>
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-white text-xl">✔</span>
-              <span>Get certified and boost your career</span>
-            </li>
-          </ul>
+        <h1 class="text-2xl font-bold">SmartSikshya</h1>
+        <div>
+          <a href="#home" class="mx-2 hover:underline">Home</a>
+          <a href="#courses" class="mx-2 hover:underline">Courses</a>
+          <a href="#about" class="mx-2 hover:underline">About</a>
+          <a href="#login" class="mx-2 hover:underline">Login/Signup</a>
         </div>
       </div>
+    </nav>
 
-      <div class="p-8 md:p-12">
-        <h2 class="text-2xl md:text-3xl font-semibold text-center mb-8">
-          Create your account
-        </h2>
-
-        <form class="space-y-5">
-          <div>
-            <label class="block mb-1 font-medium">Full Name</label>
-            <input
-              type="text"
-              class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your full name"
-              required
-            />
+    <!-- CENTERED SIGNUP CARD -->
+    <main
+      class="min-h-[calc(100vh-80px)] flex items-center justify-center px-4"
+    >
+      <div
+        class="w-full max-w-6xl bg-white shadow-lg rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2"
+      >
+        <!-- LEFT PANEL -->
+        <div
+          class="relative bg-gradient-to-br from-purple-700 to-blue-600 p-10 text-white"
+        >
+          <div class="space-y-6">
+            <h1 class="text-3xl font-bold">SmartSikshya</h1>
+            <h2 class="text-xl font-semibold">Start Your Learning Journey</h2>
+            <p class="text-gray-200">
+              Join thousands of learners advancing their careers.
+            </p>
+            <ul class="space-y-3">
+              <li>✔ 1000+ expert-led courses</li>
+              <li>✔ Learn at your own pace</li>
+              <li>✔ Career-ready certificates</li>
+            </ul>
           </div>
+        </div>
 
-          <div>
-            <label class="block mb-1 font-medium">Email</label>
+        <!-- RIGHT PANEL (FORM) -->
+        <div class="p-8 md:p-12">
+          <h2 class="text-2xl font-semibold text-center mb-8">
+            Create your account
+          </h2>
+
+          <form class="space-y-5">
             <input
-              type="email"
-              class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your email"
-              required
+              class="w-full p-3 border rounded-lg"
+              placeholder="Full Name"
             />
-          </div>
-
-          <div>
-            <label class="block mb-1 font-medium">Phone Number</label>
-            <input
-              type="text"
-              class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter your phone number"
-              required
-            />
-          </div>
-
-          <div>
-            <label class="block mb-1 font-medium">Password</label>
-            <input
-              type="password"
-              class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Create a password"
-              required
-            />
-          </div>
-
-          <div>
-            <label class="block mb-1 font-medium">Confirm Password</label>
+            <input class="w-full p-3 border rounded-lg" placeholder="Email" />
+            <input class="w-full p-3 border rounded-lg" placeholder="Phone" />
             <input
               type="password"
-              class="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Confirm your password"
-              required
+              class="w-full p-3 border rounded-lg"
+              placeholder="Password"
             />
-          </div>
+            <input
+              type="password"
+              class="w-full p-3 border rounded-lg"
+              placeholder="Confirm Password"
+            />
 
-          <label class="flex items-center gap-2 text-sm">
-            <input type="checkbox" class="w-4 h-4" required />
-            I accept the
-            <a href="#" class="text-blue-600 underline">Terms and Conditions</a>
-          </label>
+            <label class="flex gap-2 text-sm">
+              <input type="checkbox" required />
+              I accept the <a class="text-blue-600 underline">Terms</a>
+            </label>
 
-          <button
-            class="w-full bg-green-600 text-white p-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition"
-          >
-            Signup
-          </button>
-
-          <p class="text-sm text-center">
-            Already have an account?
-            <a href="login.html" class="text-blue-600 hover:underline"
-              >Login here</a
+            <button
+              class="w-full bg-green-600 text-white p-3 rounded-lg font-semibold"
             >
-          </p>
-        </form>
+              Signup
+            </button>
+
+            <p class="text-center text-sm">
+              Already have an account?
+              <a href="login.html" class="text-blue-600 underline">Login</a>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
